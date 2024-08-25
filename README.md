@@ -39,17 +39,17 @@ The larger the number following `-crf`, the greater the rate of compression.
 
 ### Word frequency
 
-The notes in the deck ought to be in order of frequency, so that users see the most common signs first. I do not have data on the frequency of signs in BSL, so I am using English word frequency data as a proxy. I found an Excel spreadsheet of the 5000 most frequent lemmas in English at <www.wordfrequency.info>, converted the relevant sheet to tab-separated values with VisiData, and used Awk to obtain a [file of words](frequency.txt) and their frequency rankings.
+The notes in the deck ought to be in order of frequency, so that users see the most common signs first. I do not have data on the frequency of signs in BSL, so I am using English word frequency data as a proxy. I found an Excel spreadsheet of the 5000 most frequent lemmas in English at www.wordfrequency.info, converted the relevant sheet to tab-separated values with VisiData, and used Awk to obtain a [file of words](frequency.txt) and their frequency rankings.
 
 ## Possible modifications
 
-If the Anki `collection.media` file you want to use is not found under the default `User 1`, you will have to amend <./script.py> to reflect your desired filepath.
+- If the Anki `collection.media` file you want to use is not found under the default `User 1`, you will have to amend (script.py)[./script.py] to reflect the correct filepath.
 
-To add a card, use the function `get_definition` in the Python script to scrape the relevant information from a page on SignBSL.com, and print the resulting note or notes to a CSV file. Run `download_videos` on the CSV file to download and compress the first video for each definition. You can then import the CSV file into Anki, making sure that all the fields correspond as described above, and that 'Allow HTML in fields' is selected.
+- To add a card, use the function `get_definition` in the Python script to scrape the relevant information from a page on SignBSL.com, and print the resulting note or notes to a CSV file. Run `download_videos` on the CSV file to download and compress the first video for each definition. You can then import the CSV file into Anki, making sure that all the fields correspond as described above, and that 'Allow HTML in fields' is selected.
 
-To change the video associated with a particular card, find the URL of the video you want and modify the relevant part of the CSV file. Then, use `download_videos` as described above.
+- To change the video associated with a particular card, find the URL of the video you want and modify the relevant part of the CSV file. Then, use `download_videos` as described above.
 
-In terms of file size, the deck is already fairly small. If you want to make it extremely tiny, at the cost of needing to download the videos when they appear for review, you could eschew the `download_videos` step and replace `{{Video}}` in the Anki card templates with the following:
+- In terms of file size, the deck is already fairly small. If you want to make it extremely tiny, at the cost of needing to download the videos when they appear for review, you could eschew the `download_videos` step and replace `{{Video}}` in the Anki card templates with the following:
 
 ``` html
 <iframe src={{VideoURL}}></iframe>
