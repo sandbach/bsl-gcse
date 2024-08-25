@@ -2,7 +2,7 @@
 
 This is an [Anki](https://docs.ankiweb.net) deck of British Sign Language (BSL) signs, based on the [GCSE vocabulary](https://www.signbsl.com/gcse-vocabulary) section of [SignBSL.com](https://www.signbsl.com/).
 
-If all you need is the deck itself, that can be found at [BSL GCSE.apkg](./BSL%20GCSE.apkg).
+If all you need is the deck itself, that can be found at [BSL GCSE.apkg](BSL%20GCSE.apkg).
 
 ## How it works
 
@@ -43,7 +43,7 @@ The notes in the deck ought to be in order of frequency, so that users see the m
 
 ## Possible modifications
 
-- If the Anki `collection.media` file you want to use is not found under the default `User 1`, you will have to amend (script.py)[./script.py] to reflect the correct filepath.
+- If the Anki `collection.media` file you want to use is not found under the default `User 1`, you will have to amend [script.py](script.py) to reflect the correct filepath.
 
 - To add a card, use the function `get_definition` in the Python script to scrape the relevant information from a page on SignBSL.com, and print the resulting note or notes to a CSV file. Run `download_videos` on the CSV file to download and compress the first video for each definition. You can then import the CSV file into Anki, making sure that all the fields correspond as described above, and that 'Allow HTML in fields' is selected.
 
