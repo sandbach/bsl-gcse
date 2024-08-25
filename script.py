@@ -1,9 +1,9 @@
-import requests
 from pathlib import Path
 from os import system
 from os.path import exists
 import re
 import csv
+import requests
 from bs4 import BeautifulSoup
 
 CSV_PATH = "biglist.csv"
