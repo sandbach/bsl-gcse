@@ -45,7 +45,7 @@ The notes in the deck ought to be in order of frequency, so that users see the m
 
 - If the Anki `collection.media` directory you want to use is not found under the default `User 1`, you will have to amend [script.py](script.py) to reflect the correct filepath.
 
-- To add notes for new signs, use the function `add_signs` in the Python script, and run `download_video` on the resulting CSV file to download and compress the first video for each definition. You can then import the CSV file into Anki, making sure that all the fields correspond as described above, and that 'Allow HTML in fields' is selected.
+- To add notes for new signs, use the function `add_signs` in the Python script, and run `download_videos` on the resulting CSV file to download and compress the first video for each definition. You can then import the CSV file into Anki, making sure that all the fields correspond as described above, and that 'Allow HTML in fields' is selected.
 
 - To change the video associated with a particular card, find the URL of the video you want and modify the relevant part of the CSV file. Then, use `download_videos` as described above.
 
