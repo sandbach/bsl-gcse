@@ -152,3 +152,10 @@ def read_csv(path):
             row = row[0:3] + row[4:7] + [tags]
             notes.append(Note(row))
     return notes
+
+
+def add_signs(signs, tags, output):
+    notes = []
+    for sign in signs:
+        notes += get_definitions("https://www.signbsl.com/sign/" + sign, tags)
+    write_csv(output, notes)
