@@ -2,7 +2,7 @@
 
 This is an [Anki](https://docs.ankiweb.net) deck of British Sign Language (BSL) signs, based on the [GCSE vocabulary](https://www.signbsl.com/gcse-vocabulary) section of [SignBSL.com](https://www.signbsl.com/).
 
-If all you need is the deck itself, that can be found at [BSL GCSE.apkg](./BSL GCSE.apkg).
+If all you need is the deck itself, that can be found at [BSL GCSE.apkg](./BSL%20GCSE.apkg).
 
 ## How it works
 
@@ -12,7 +12,7 @@ Requirements:
 - FFmpeg
 - Anki desktop
 
-The main Python script is a web scraper which follows each link on the GCSE Vocabulary page and downloads the information for one Anki note for each of the headings (`h1` or `h2`) on the page. In the interest of simplicity, the video URL that it chooses is always that of the first video that follows the heading. For example, on the page for the word [finish](https://www.signbsl.com/sign/finish), the script finds a note for each of the three senses, and chooses the first videos by SignStation, the University of Wolverhampton, and SignStation, respectively. It downloads and compresses the video, placing it in the [appropriate directory](https://docs.ankiweb.net/importing/text-files.html#importing-media).
+The main Python script is a web scraper which follows each link on the GCSE Vocabulary page and downloads the information for one Anki note for each of the headings (`h1` or `h2`) on the page. In the interest of simplicity, the video URL that it chooses is always that of the first video that follows the heading. For example, on the page for the word [finish](https://www.signbsl.com/sign/finish), the script finds a note for each of the three senses, and chooses the first videos by SignStation, the University of Wolverhampton, and SignStation, respectively. It downloads and compresses the videos, placing them in the [appropriate directory](https://docs.ankiweb.net/importing/text-files.html#importing-media).
 
 There is a great deal of variety within BSL, and this is reflected in the number of different signs shown for a single English word on SignBSL.com. For this reason, the video chosen for a particular sign by the script may not be one you have been taught. See below for how to add a different video to a note.
 
