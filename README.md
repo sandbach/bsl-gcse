@@ -2,7 +2,7 @@
 
 This is an [Anki](https://docs.ankiweb.net) deck of British Sign Language (BSL) signs, based on the [GCSE vocabulary](https://www.signbsl.com/gcse-vocabulary) section of [SignBSL.com](https://www.signbsl.com/).
 
-If all you need is the deck itself, that can be found at <./BSL GCSE.apkg>.
+If all you need is the deck itself, that can be found at [BSL GCSE.apkg](./BSL GCSE.apkg).
 
 ## How it works
 
@@ -35,7 +35,7 @@ While the videos on SignBSL.com are already fairly small and well-compressed, th
 ffmpeg -i "input.mp4" -vcodec libx265 -crf 32 "output.mp4"
 ```
 
-The larger the number following `-i`, the greater the rate of compression.
+The larger the number following `-crf`, the greater the rate of compression.
 
 ### Word frequency
 
