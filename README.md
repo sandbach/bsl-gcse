@@ -1,6 +1,6 @@
 # BSL Anki Deck
 
-This is an [Anki](https://docs.ankiweb.net) deck of British Sign Language (BSL) signs, based on the [GCSE vocabulary](https://www.signbsl.com/gcse-vocabulary) section of [SignBSL.com](https://www.signbsl.com/).
+This is an [Anki](https://docs.ankiweb.net) deck of British Sign Language (BSL) signs sorted by frequency, based on the [GCSE vocabulary](https://www.signbsl.com/gcse-vocabulary) section of [SignBSL.com](https://www.signbsl.com/).
 
 The deck itself can be found at [BSL GCSE.apkg](BSL%20GCSE.apkg).
 
